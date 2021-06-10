@@ -1,0 +1,35 @@
+body{
+    background-color: antiquewhite;
+    font-family: "times new roman";
+}
+
+.top-container {
+    display: flex;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    position: relative;
+    top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list-title {
+    font-weight: normal;
+}
+
+#button-click {
+    background-color: #245DA1;
+    border: 2px;
+    border-radius: 4px;
+    color: antiquewhite;
+    margin: auto;
+    padding: 2px;
+}
+
+
+/* Make the website look better with classes and flex box */
