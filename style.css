@@ -22,9 +22,12 @@ h1 {
     font-weight: normal;
 }
 
+/* change this to center in the middle of the page */
+
 #button-click {
     background-color: #245DA1;
-    border: 2px;
+    border-style: solid;
+    border-width: 2px;
     border-radius: 4px;
     color: antiquewhite;
     margin: auto;
