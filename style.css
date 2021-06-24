@@ -1,68 +1,26 @@
 body{
-    background-color: antiquewhite;
-    font-family: "times new roman";
+    background-color: #DCDCDC;
+    font-family: "Helvetica";
 }
 
 .top-container {
     display: flex;
+    justify-content: space-between;
 }
 
 img {
-    height: 100px;
-    width: 100px;
+    border-radius: 30%;
+    height: 80px;
+    width: 80px;
 }
 
 h1 {
-    position: relative;
-    top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Gill Sans, Sans Serif;
 }
 
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
 
-.dropdown {
-    position: relative;
-    display: inline-block;    
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:blanchedalmond;
-    min-width: 160px;
-    box-shadow: 0px 8 px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: black;}
-
-/* change this to center in the middle of the page */
-
-#button-click {
+#test-button{
     background-color: #245DA1;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 4px;
-    color: antiquewhite;
-    margin: auto;
-    padding: 2px;
+    border: dotted grey
 }
-
-
-/* Make the website look better with classes and flex box */
