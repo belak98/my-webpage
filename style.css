@@ -1,30 +1,57 @@
-body{
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #DCDCDC;
     font-family: "Helvetica";
 }
 
 .title-card {
-    background-color: darkgrey;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 #site-img {
-    border-radius: 30%;
+    border-radius: 50%;
     height: 80px;
     width: 80px;
+    margin: 4px 4px 12px 4px;
     align-items: center;
 }
 
 #site-title {
     font-family: Georgia, sans serif;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
-#menu-bar {
+.menubar {
     display: flex;
-    background-color: darkgrey;
+    background-color: #555;
+    overflow: auto;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.menubar a {
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    width: 20%;
+    text-align: center;
+}
+
+.menubar a:hover {
+    background-color: #000;
+}
+
+.menubar a.active {
+    background-color: #C0C0C0;
+    color: black;
 }
 
 .button-secret {
@@ -32,9 +59,14 @@ body{
     justify-content: center;
 }
 
-#test-button{
+.body-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgrey;
+    height: 250px;
+}
+
+#test-button {
     background-color: #245DA1;
     border: dotted grey
 }
-
-/*  */
