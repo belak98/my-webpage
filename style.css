@@ -3,24 +3,38 @@ body{
     font-family: "Helvetica";
 }
 
-.top-container {
+.title-card {
+    background-color: darkgrey;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-img {
+#site-img {
     border-radius: 30%;
     height: 80px;
     width: 80px;
+    align-items: center;
 }
 
-h1 {
-    font-family: Gill Sans, Sans Serif;
+#site-title {
+    font-family: Georgia, sans serif;
+    margin-left: 10%;
 }
 
+#menu-bar {
+    display: flex;
+    background-color: darkgrey;
+}
 
+.button-secret {
+    display: flex;
+    justify-content: center;
+}
 
 #test-button{
     background-color: #245DA1;
     border: dotted grey
 }
+
+/*  */

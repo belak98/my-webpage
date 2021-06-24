@@ -1,3 +1,3 @@
 function testAlert() {
-  alert("Hey  you found me!");
+  alert("Hey you found me!");
 }
