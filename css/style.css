@@ -1,9 +1,4 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
+#page1 { 
     background-color: #DCDCDC;
     font-family: "Helvetica";
 }
@@ -16,15 +11,17 @@ body {
 
 #site-img {
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    margin: 4px 4px 12px 4px;
+    height: 65px;
+    width: 65px;
+    margin: 0px 4px 15px 4px;
     align-items: center;
+    justify-content: center;
 }
 
 #site-title {
     font-family: Georgia, sans serif;
-    margin-left: 5%;
+    margin: 0px 5px 15px 5px;
+    justify-content: center;
 }
 
 .menubar {
@@ -69,4 +66,20 @@ body {
 #test-button {
     background-color: #245DA1;
     border: dotted grey
+}
+
+/* make sure you add the links for the page and do some more research into the flex box... */
+
+#page2 {
+    background-color: #DCDCDC;
+}
+
+.wtf {
+    display: flex;
+    justify-content: center;
+}
+
+.homePage {
+    display: flex;
+    justify-content: center;
 }
