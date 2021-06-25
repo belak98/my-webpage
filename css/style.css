@@ -19,12 +19,12 @@
 }
 
 #site-title {
-    font-family: Georgia, sans serif;
+    font-family: Georgia, Sans Serif;
     margin: 0px 5px 15px 5px;
     justify-content: center;
 }
 
-.menubar {
+.menu-bar {
     display: flex;
     background-color: #555;
     overflow: auto;
@@ -33,7 +33,7 @@
 
 }
 
-.menubar a {
+.menu-bar a {
     padding: 6px;
     color: white;
     text-decoration: none;
@@ -42,11 +42,11 @@
     text-align: center;
 }
 
-.menubar a:hover {
+.menu-bar a:hover {
     background-color: #000;
 }
 
-.menubar a.active {
+.menu-bar a.active {
     background-color: #C0C0C0;
     color: black;
 }
@@ -58,28 +58,42 @@
 
 .body-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     background-color: darkgrey;
-    height: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 #test-button {
-    background-color: #245DA1;
+    background-color: #DCDCDC ;
+    color: #DCDCDC;
     border: dotted grey
 }
-
-/* make sure you add the links for the page and do some more research into the flex box... */
 
 #page2 {
     background-color: #DCDCDC;
 }
 
-.wtf {
+.dust-quote {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, Sans Serif;
+}
+
+.home-page {
     display: flex;
     justify-content: center;
 }
 
-.homePage {
-    display: flex;
-    justify-content: center;
+#page3 {
+    background-color: #DCDCDC;
+}
+
+#page3-title {
+    font-family: Georgia, Sans Serif;
+}
+
+#page1-bio {
+    font-family: 'Times New Roman', Times, serif;
 }
