@@ -1924,16 +1924,58 @@ var _axios = _interopRequireDefault(require("axios"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var cardDiv = document.querySelector(".git-cards");
+
 function getUserInfo(username) {
+  // pulling userdata from the api
   _axios.default.get("https://api.github.com/users/".concat(username)).then(function (res) {
+    // creating a variable to store the userdata recieved inside of
+    var gitUserData = cardCreator(res.data); // appending the userdata inside of the container
+
+    cardDiv.appendChild(gitUserData); // logging the data recieved to make sure that it is correct
+
     console.log(res.data);
   }).catch(function (err) {
-    console.log('Error has occured');
+    // this will catch any errors that occur during the instantiation of the code
+    console.log("Container Doesnt Exist yet");
   });
 }
 
-;
-getUserInfo('belak98'); // now that the api client works I can get started on using this in the live webpage.. 
+getUserInfo("belak98");
+
+function cardCreator(obj) {
+  //create elements
+  var userCard = document.createElement("div");
+  var userImg = document.createElement("div");
+  var cardInfo = document.createElement("div");
+  var usersName = document.createElement("h3");
+  var userName = document.createElement("p");
+  var location = document.createElement("p");
+  var userProfile = document.createElement("p");
+  var profileUrl = document.createElement("a");
+  var followers = document.createElement("p");
+  var following = document.createElement("p");
+  var userBio = document.createElement("p"); //append
+
+  cardDiv.appendChild(userCard);
+  userCard.appendChild(userImg);
+  userCard.appendChild(cardInfo);
+  userCard.appendChild(usersName);
+  userCard.appendChild(userName);
+  userCard.appendChild(location);
+  userCard.appendChild(userProfile);
+  userProfile.appendChild(profileUrl);
+  userCard.appendChild(followers);
+  userCard.appendChild(following);
+  userCard.appendChild(userBio); //class
+
+  userCard.classList.add("card");
+  cardInfo.classList.add("card-info");
+  usersName.classList.add("name");
+  userName.classList.add("username"); //content
+
+  return userCard;
+} // now that the api client works I can get started on using this in the live webpage..
 // make sure you take in everything that you need from git hub make the classes and the UI look good :)
 },{"axios":"node_modules/axios/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -1963,7 +2005,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56587" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52999" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

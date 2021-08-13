@@ -1,117 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat+Alternates&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/index.css" />
-  </head>
-  <body>
-    <!-- top page elements -->
-    <header>
-      <h1>Kaleb Van Heusen</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Projects</a>
-      </nav>
-    </header>
-    <!-- main image elements -->
-    <section class="mainImg">
-      <img
-        class="bigImg"
-        alt="Random Picture of Scenery"
-        src="https://picsum.photos/750/500?random=7"
-      />
-      <p class="nameText">
-        Kaleb Van Heusen<br />
-        My Projects
-      </p>
-    </section>
-    <!-- img gallery elements -->
-    <section class="gallery">
-      <div class="gallImg">
-        <a href="#" target="_blank"
-          ><img
-            class="smallImg"
-            alt="Random Picture of Scenery"
-            src="https://picsum.photos/300/300?random=1"
-        /></a>
-        <div class="gallText">
-          <p>Here is a real one.</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/index.css" />
+</head>
+
+<body>
+  <!-- top page elements -->
+  <header>
+    <h1>Kaleb V.</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+  <section>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://picsum.photos/1000/500?random=1">
+        <div class="text">Future</div>
       </div>
-      <div class="gallImg">
-        <a href="#" target="_blank"
-          ><img
-            class="smallImg"
-            alt="Random Picture of Scenery"
-            src="https://picsum.photos/300/300?random=2"
-        /></a>
-        <div class="gallText">
-          <p>Another real one.</p>
-        </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://picsum.photos/1000/500?random=2">
+        <div class="text">Projects</div>
       </div>
-      <div class="gallImg">
-        <a href="#" target="_blank"
-          ><img
-            class="smallImg"
-            alt="Random Picture of Scenery"
-            src="https://picsum.photos/300/300?random=3"
-        /></a>
-        <div class="gallText">
-          <p>Totally real.</p>
-        </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://picsum.photos/1000/500?random=3">
+        <div class="text">Here</div>
       </div>
-      <div class="gallImg">
-        <a href="#" target="_blank"
-          ><img
-            class="smallImg"
-            alt="Random Picture of Scenery"
-            src="https://picsum.photos/300/300?random=4"
-        /></a>
-        <div class="gallText">
-          <p>This one too.</p>
-        </div>
-      </div>
-      <div class="gallImg">
-        <a href="#" target="_blank"
-          ><img
-            class="smallImg"
-            alt="Random Picture of Scenery"
-            src="https://picsum.photos/300/300?random=5"
-        /></a>
-        <div class="gallText">
-          <p>Dont check me.</p>
-        </div>
-      </div>
-      <div class="gallImg">
-        <a href="#" target="_blank"
-          ><img
-            class="smallImg"
-            alt="Random Picture of Scenery"
-            src="https://picsum.photos/300/300?random=6"
-        /></a>
-        <div class="gallText">
-          <p>Spicy one.</p>
-        </div>
-      </div>
-    </section>
-    <!-- footer elements -->
-    <footer>
-      <a
-        class="closing"
-        href="https://www.linkedin.com/in/kaleb-van-heusen-b16836210/"
-        target="_blank"
-        >Contact Me</a
-      >
-    </footer>
-  </body>
-  <script src="./index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section class="article-section">
+  <article>
+
+    <!-- come back and keep adjusing the colors until it looks clean.. also need to add a flex container for the article section and site img in the header -->
+
+    <h3>What My Goals Are</h3>
+    <p class="article1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam necessitatibus distinctio
+      asperiores sapiente consequatur, hic repellat consequuntur doloremque nam impedit molestiae nemo voluptates fuga,
+      in laborum atque porro sit odit?</p>
+
+    <h3>Site Plans</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eum non maxime doloribus nostrum est, magnam libero voluptas fuga quasi quo eveniet magni nemo ipsa nisi ab aut adipisci sint!</p>
+
+  </article>
+  <footer>
+    <a class="closing" href="https://www.linkedin.com/in/kaleb-van-heusen-b16836210/" target="_blank">Contact Me</a>
+  </footer>
+</body>
+<script src="./slideshow.js"></script>
+
 </html>
+<!-- for now leave out the old img gallery while i work to make a new one -->
