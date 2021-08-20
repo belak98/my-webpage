@@ -1924,8 +1924,14 @@ var _axios = _interopRequireDefault(require("axios"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+<<<<<<< Updated upstream
+=======
+var cardDiv = document.querySelector(".git-card");
+
+>>>>>>> Stashed changes
 function getUserInfo(username) {
   _axios.default.get("https://api.github.com/users/".concat(username)).then(function (res) {
+<<<<<<< Updated upstream
     console.log(res.data);
   }).catch(function (err) {
     console.log('Error has occured');
@@ -1934,6 +1940,67 @@ function getUserInfo(username) {
 
 ;
 getUserInfo('belak98'); // now that the api client works I can get started on using this in the live webpage.. 
+=======
+    // creating a variable to store the userdata recieved inside of
+    var gitUserData = cardCreator(res.data); // appending the userdata inside of the container
+
+    cardDiv.appendChild(gitUserData); // logging the data recieved to make sure that it is correct
+    // console.log(gitUserData);
+    // console.log(res.data);
+
+    console.log('Done!');
+  }).catch(function (err) {
+    // this will catch any errors that occur during the instantiation of the code
+    console.log("Something went Wrong..");
+  });
+}
+
+getUserInfo("belak98");
+
+function cardCreator(obj) {
+  //create elements
+  var userCard = document.createElement("div");
+  var userImg = document.createElement("div");
+  var cardInfo = document.createElement("div");
+  var usersName = document.createElement("h3");
+  var userName = document.createElement("p");
+  var location = document.createElement("p");
+  var profile = document.createElement("p");
+  var profileUrl = document.createElement("a");
+  var followers = document.createElement("p");
+  var following = document.createElement("p");
+  var userBio = document.createElement("p");
+  profile.textContent = 'Profile: '; //append
+
+  cardDiv.appendChild(userCard);
+  userCard.appendChild(userImg);
+  userCard.appendChild(cardInfo);
+  cardInfo.appendChild(usersName);
+  cardInfo.appendChild(userName);
+  cardInfo.appendChild(location);
+  cardInfo.appendChild(profile);
+  cardInfo.appendChild(followers);
+  cardInfo.appendChild(following);
+  cardInfo.appendChild(userBio);
+  profile.appendChild(profileUrl); //class
+
+  userCard.classList.add("card");
+  cardInfo.classList.add("card-info");
+  usersName.classList.add("name");
+  userName.classList.add("username"); //content
+
+  userImg.src = obj.avatar_url;
+  usersName.textContent = obj.name;
+  userName.textContent = obj.login;
+  location.textContent = "Location: ".concat(obj.location);
+  profileUrl.href = obj.html_url;
+  profileUrl.textContent = obj.html_url;
+  followers.textContent = "Followers: ".concat(obj.followers);
+  following.textContent = "Following: ".concat(obj.following);
+  userBio.textContent = "Bio: ".concat(obj.bio);
+  return userCard;
+} // now that the api client works I can get started on using this in the live webpage..
+>>>>>>> Stashed changes
 // make sure you take in everything that you need from git hub make the classes and the UI look good :)
 },{"axios":"node_modules/axios/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -1963,7 +2030,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< Updated upstream
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "56587" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49654" + '/');
+>>>>>>> Stashed changes
 
   ws.onmessage = function (event) {
     checkedAssets = {};
