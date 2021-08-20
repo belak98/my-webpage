@@ -1,16 +1,3 @@
-<<<<<<< Updated upstream
-import axios from 'axios'
-
-function getUserInfo(username) {
-    axios.get(`https://api.github.com/users/${username}`)
-    .then((res) => {
-        console.log(res.data);
-    })
-    .catch((err) => {
-        console.log('Error has occured');
-    });
-};
-=======
 import axios from "axios";
 
 const cardDiv = document.querySelector(".git-card");
@@ -65,13 +52,13 @@ function cardCreator(obj) {
   cardInfo.appendChild(following);
   cardInfo.appendChild(userBio);
   profile.appendChild(profileUrl);
->>>>>>> Stashed changes
 
-getUserInfo('belak98')
+  //class
+  userCard.classList.add("card");
+  cardInfo.classList.add("card-info");
+  usersName.classList.add("name");
+  userName.classList.add("username");
 
-<<<<<<< Updated upstream
-// now that the api client works I can get started on using this in the live webpage.. 
-=======
   //content
   userImg.src = obj.avatar_url;
   usersName.textContent = obj.name;
@@ -86,5 +73,4 @@ getUserInfo('belak98')
   return userCard;
 }
 // now that the api client works I can get started on using this in the live webpage..
->>>>>>> Stashed changes
 // make sure you take in everything that you need from git hub make the classes and the UI look good :)
